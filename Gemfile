@@ -43,5 +43,6 @@ group :development, :test do
   gem 'spring'
   gem 'mysql2', '~> 0.3.18'
   gem 'unicorn'
+  gem 'passenger'
 end
 

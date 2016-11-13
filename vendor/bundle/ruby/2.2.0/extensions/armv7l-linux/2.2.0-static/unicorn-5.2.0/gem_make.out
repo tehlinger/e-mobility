@@ -1,0 +1,115 @@
+/opt/rubies/ruby-2.2.1/bin/ruby -r ./siteconf20161112-2889-1hnru34.rb extconf.rb
+checking for SIZEOF_OFF_T in ruby.h... yes
+checking for SIZEOF_SIZE_T in ruby.h... yes
+checking for SIZEOF_LONG in ruby.h... yes
+checking for rb_str_set_len() in ruby.h... yes
+checking for rb_hash_clear() in ruby.h... yes
+checking for gmtime_r() in time.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling unicorn_http.c
+unicorn_http.c: In function ‘http_parser_execute’:
+unicorn_http.c:706:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:726:19: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  } else if ( (*p) >= 0 )
+                   ^
+unicorn_http.c:1191:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1211:19: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  } else if ( (*p) >= 0 )
+                   ^
+unicorn_http.c:1320:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1338:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1394:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1447:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1465:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:1595:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:1621:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:1677:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:1703:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:1734:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:1764:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:1791:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:2553:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:2573:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:2631:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:2686:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:2706:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:2836:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:2862:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:2918:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:2944:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:2975:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:3005:20: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   } else if ( (*p) >= 0 )
+                    ^
+unicorn_http.c:3032:10: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+   if ( 0 <= (*p) && (*p) <= 32 )
+          ^
+unicorn_http.c:3447:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:3467:19: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  } else if ( (*p) >= 0 )
+                   ^
+unicorn_http.c:3577:9: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if ( 0 <= (*p) && (*p) <= 31 )
+         ^
+unicorn_http.c:3597:19: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  } else if ( (*p) >= 0 )
+                   ^
+compiling httpdate.c
+linking shared-object unicorn_http.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 unicorn_http.so ./.gem.20161112-2889-sv30em

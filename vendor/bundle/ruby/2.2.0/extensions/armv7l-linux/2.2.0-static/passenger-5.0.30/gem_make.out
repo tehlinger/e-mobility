@@ -1,0 +1,22 @@
+/opt/rubies/ruby-2.2.1/bin/ruby -r ./siteconf20161112-2889-4lww5f.rb extconf.rb
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/rubyext-ruby-2.2.1-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/rubyext-ruby-2.2.1-armv7l-linux.tar.gz: The requested URL returned error: 404 Not Found
+Attempting to download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/rubyext-ruby-2.2.1-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/rubyext-ruby-2.2.1-armv7l-linux.tar.gz: The requested URL returned error: 403 Forbidden
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/nginx-1.10.1-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/nginx-1.10.1-armv7l-linux.tar.gz: The requested URL returned error: 404 Not Found
+Attempting to download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/nginx-1.10.1-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/nginx-1.10.1-armv7l-linux.tar.gz: Resolving timed out after 4513 milliseconds
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/agent-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.30/agent-armv7l-linux.tar.gz: The requested URL returned error: 404 Not Found
+Attempting to download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/agent-armv7l-linux.tar.gz into /home/pi/e-mobility/vendor/bundle/ruby/2.2.0/gems/passenger-5.0.30/download_cache
+*** Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.30/agent-armv7l-linux.tar.gz: The requested URL returned error: 403 Forbidden
+
+make "DESTDIR=" clean
+true
+
+make "DESTDIR="
+true
+
+make "DESTDIR=" install
+true
