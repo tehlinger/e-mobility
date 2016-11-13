@@ -44,5 +44,7 @@ group :development, :test do
   gem 'mysql2', '~> 0.3.18'
   gem 'unicorn'
   gem 'passenger'
+  gem 'devise', '3.4.1'
+  gem 'bootstrap-sass'
 end
 

@@ -10,9 +10,18 @@
  </title>
 </head>
 <body>
-<p>
-Welcome to <span>E-mobility</span>, the brand new ruby on rails portal!
-</p>
+	<p>Welcome to <span>E-mobility</span>, the brand new ruby on rails portal!</p>
 <hr />
+	<% content_for :top_content do %>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome!</h1>
+      <p>Register to get started.</p>
+      <p>
+        <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+      </p>
+    </div>
+  </div>
+<% end %>
 </body>
 </html>
