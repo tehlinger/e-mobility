@@ -10,17 +10,22 @@
  </title>
 </head>
 <body>
-	<p>Welcome to <span>E-mobility</span>, the brand new ruby on rails portal!</p>
 <hr />
 	<% content_for :top_content do %>
   <div class="jumbotron">
     <div class="container">
-      <h1>Welcome!</h1>
-      <p>Register to get started.</p>
+      <% if user_signed_in? %>
+        <h1>Success!</h1>
+        <p>You are authentified. You shall now pass in peace.</p>
+      <% else %>
+        <h1>Welcome!</h1>
+	<p>Welcome to <span>E-mobility</span>, the brand new ruby on rails portal!</p>
+	<p>Register to get started.</p>
       <p>
         <%= link_to 'Register', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
       </p>
     </div>
+    <% end %>
   </div>
 <% end %>
 </body>

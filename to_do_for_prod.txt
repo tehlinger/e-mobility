@@ -1,0 +1,2 @@
+#ajour booleen 'admin' à user
+rails generate migration add_admin_to_users admin:boolean
