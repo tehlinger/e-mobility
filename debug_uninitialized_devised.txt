@@ -1,0 +1,5 @@
+1.Restart
+	-Reconnect ssh
+	-Bunde install
+	-Bundle exec passenger start
+2.Gemfile contains devise
