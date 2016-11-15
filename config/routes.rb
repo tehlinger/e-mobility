@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  devise_for :users
+  devise_for :users, controllers: { sessions: "users/sessions" }
   get "/pages/:page" => "pages#show"
+  root "pages#show", page: "home"
+  get '*not_found', to: 'errors#error_404'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -56,6 +59,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root "pages#show", page: "home"
-  get '*not_found', to: 'errors#error_404'
 end
