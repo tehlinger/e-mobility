@@ -9,7 +9,7 @@ class Users::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
    def create
      super
-     sys_request = "sh hello.sh " + request.remote_ip 
+     sys_request = "sudo sh authorize_user.sh" + request.remote_ip 
      system(sys_request)
    end
   

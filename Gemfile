@@ -35,7 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
   gem 'passenger'
   gem 'devise', '3.4.1'
   gem 'rails_admin', '~> 1.0'  
-
+  gem 'bootstrap-sass'
+  gem 'jquery-turbolinks'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -45,8 +46,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'bootstrap-sass'
-  gem 'jquery-turbolinks'
 
 
 end

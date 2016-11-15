@@ -17,3 +17,4 @@
 
 //= require jquery.turbolinks
 //= require bootstrap/dropdown
+//= require bootstrap-sprockets

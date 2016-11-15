@@ -1,1 +1,1 @@
-sudo iptables -t mangle  -D internet -m mac --mac-source $1 -j RETURN
+sudo iptables -t mangle  -D internet -s $1 -j RETURN
