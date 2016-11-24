@@ -9,15 +9,16 @@ class Users::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
    def create
      super
-     sys_request = "sudo sh authorize_user.sh" + request.remote_ip 
-     system(sys_request)
+	current_user.update_attribute :just_signed_in, true
    end
   
  
   # DELETE /resource/sign_out
-  # def destroy
-  #   super
-  # end
+   def destroy
+     super
+     sys_request = "sudo sh /home/pi/e-mobility/block_user.sh " + request.remote_ip + " &"
+     system(sys_request)
+   end
 
   # protected
 

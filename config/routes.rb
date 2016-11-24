@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/pages/:page" => "pages#show"
   root "pages#show", page: "home"
   get '*not_found', to: 'errors#error_404'
+#  get '*not_found', to: pages#show {:page=>"home"}
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
